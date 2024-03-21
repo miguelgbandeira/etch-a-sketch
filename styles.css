@@ -1,0 +1,14 @@
+.grid-container {
+  width: 600px; /* Fixed size for the grid container */
+  height: 600px; /* Fixed size for the grid container */
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: calc(100% / var(--n)); /* Calculate width based on number of columns */
+  height: calc(100% / var(--n)); /* Calculate height based on number of rows */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
