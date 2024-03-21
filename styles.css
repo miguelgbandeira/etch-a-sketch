@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(251 110 90);
 }
 
 .grid-container {
@@ -32,12 +31,4 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
   background-color: white;
-}
-
-.content .grid-item {
-  background-color: white; /* Set the initial background color to white */
-}
-
-.content .grid-item.hovered {
-  background-color: black; /* Change the background color to black on hover */
 }

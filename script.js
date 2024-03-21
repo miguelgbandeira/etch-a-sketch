@@ -14,7 +14,6 @@ function generateGrid(n) {
     gridItem.classList.add("grid-item");
     let hoverCounter = 1;
     gridItem.addEventListener("mouseenter", () => {
-      gridItem.style.backgroundColor = "black";
       console.log(gridItem.style.backgroundColor);
       hoverCounter = darkenCell(gridItem, hoverCounter);
     });
