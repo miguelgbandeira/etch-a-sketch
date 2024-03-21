@@ -1,14 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: "Gamesome", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  padding: 30px;
+  color: rgb(251 110 90);
+  background-color: rgb(255 225 69);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(251 110 90);
+}
+
 .grid-container {
-  width: 600px; /* Fixed size for the grid container */
-  height: 600px; /* Fixed size for the grid container */
+  width: 1000px; /* Fixed size for the grid container */
+  height: 1000px; /* Fixed size for the grid container */
   border: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
 }
-
 .grid-item {
   width: calc(100% / var(--n)); /* Calculate width based on number of columns */
   height: calc(100% / var(--n)); /* Calculate height based on number of rows */
   border: 1px solid #ccc;
   box-sizing: border-box;
+  background-color: white;
+}
+
+.content .grid-item {
+  background-color: white; /* Set the initial background color to white */
+}
+
+.content .grid-item.hovered {
+  background-color: black; /* Change the background color to black on hover */
 }
